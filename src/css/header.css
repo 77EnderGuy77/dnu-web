@@ -2,16 +2,15 @@
 .header {
   position: sticky;
   top: 0;
-  left: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 1440px;
-  height: 94px;
-  margin: 0 auto;
+  margin: 0 auto;        
   padding: 24px 108px;
   background: #fff;
   border-bottom: 1px solid #c3c3c3;
+  transform: translateX(1px);
   box-sizing: border-box;
   z-index: 9999;
 }
