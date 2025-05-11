@@ -1,0 +1,51 @@
+/* Floating‐label + arrow for FilterBox (288×64) */
+.filter-select-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 288px;
+  height: 64px;
+  margin: 20px 0;
+  padding: 0 16px;
+  border: 1px solid #79747e;
+  border-radius: 4px;
+  background: white;
+  box-sizing: border-box;
+}
+
+.filter-select-wrapper label {
+  position: absolute;
+  top: -0.6em;
+  left: 12px;
+  padding: 0 6px;
+  font: 400 14px "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #21005d;
+  background: white;
+  pointer-events: none;
+}
+
+.filter-select-wrapper.has-value label {
+  font-size: 14px;
+}
+
+.filter-select-wrapper select {
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 28px 0 0;
+  font-size: 16px;
+  line-height: normal;
+  background: transparent;
+  appearance: none;
+  box-sizing: border-box;
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  pointer-events: none;
+}

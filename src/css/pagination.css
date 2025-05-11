@@ -1,0 +1,31 @@
+/* src/components/pagination.css */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 8px;
+}
+
+.pagination button,
+.pagination .ellipsis {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #8954ff;
+  border-radius: 4px;
+  background: #fff;
+  color: #8954ff;
+  cursor: pointer;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.pagination button.active {
+  background: #8954ff;
+  color: #fff;
+  border-color: #8954ff;
+}

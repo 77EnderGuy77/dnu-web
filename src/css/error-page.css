@@ -1,0 +1,43 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  background: #fff;
+  height: 100vh;
+  display: flex;
+}
+
+.error-page-container {
+  width: 1224px;
+  height: 405px;
+  margin-top: 250px;
+  margin-left: 108px;
+}
+
+.message {
+  font: 500 64px "Roboto", sans-serif;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.sub-massage {
+  font: 400 32px "Roboto", sans-serif;
+  letter-spacing: 0em;
+  color: #000;
+}
+
+.home-button {
+  font: 500 24px "Roboto", sans-serif;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #fff;
+  background: #5a00d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  border-radius: 100px;
+  width: 375px;
+  height: 58px;
+}

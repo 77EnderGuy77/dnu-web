@@ -1,0 +1,50 @@
+/* Overall filter sidebar */
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 288px;
+  padding: 16px;
+  
+}
+
+.filter-container > span {
+  font: 500 20px/1.2 "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  color: #21005d;
+  align-self: flex-start;
+}
+
+/* Stack the three FilterBoxes */
+.filter-options {
+  width: 100%;
+}
+
+/* "Вік" label + its two boxes */
+.age {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.age > span {
+  font: 400 16px/1.5 "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #21005d;
+  margin: 0;
+}
+
+/* Put Min / Max in a vertical column */
+.age-row {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.price-row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

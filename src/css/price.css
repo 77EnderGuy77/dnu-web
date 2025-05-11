@@ -1,0 +1,28 @@
+/* 1) pull in the shared floating‐label + arrow (even though we won't use the arrow here) */
+@import "./option-box.css";
+
+/* 2) layout Min/Max side by side */
+.price-filter-container {
+  display: flex;
+  gap: 16px;
+}
+
+/* 3) override each box to 136×64 */
+.price-filter-container .select-wrapper {
+  width: 136px;
+  height: 64px;
+  margin: 8px 0;
+}
+
+/* 4) add a little space for the prefix */
+.price-filter-container .select-wrapper .prefix {
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: normal;
+  color: #333;
+}
+
+/* 5) hide the arrow container in case it's present */
+.price-filter-container .select-wrapper .custom-arrow {
+  display: none;
+}

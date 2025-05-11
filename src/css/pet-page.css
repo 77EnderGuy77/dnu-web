@@ -1,0 +1,226 @@
+.pet-page {
+  /* Box & layout */
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  height: 100vh;
+
+  /* Visual */
+  background-color: #fff;
+}
+
+.pet-back-link {
+  /* Box & layout */
+  margin: 20px 0 20px 108px;
+
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+
+  /* Visual */
+  color: #000;
+}
+
+.pet-show {
+  /* Box & layout */
+  display: grid;
+  margin-left: 108px;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+
+  /* Grid areas */
+  grid-template-areas:
+    "pet-img  pet-info"
+    "pet-desc pet-info";
+  grid-template-columns: 728px 455px;
+}
+
+.pet-img {
+  /* Grid placement */
+  grid-area: pet-img;
+
+  /* Positioning for carousel arrows */
+  position: relative;
+}
+
+.pet-img img {
+  /* Box & layout */
+  width: 728px;
+  height: 528px;
+}
+
+.pet-img .arrows {
+  /* Positioning */
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  transform: translateY(-100%);
+
+  /* Box & layout */
+  display: flex;
+  justify-content: space-between;
+}
+
+.pet-img .arrows img {
+  /* Box & layout */
+  width: 44px;
+  height: 44px;
+
+  /* Visual & interaction */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.pet-img .arrows img:active {
+  transform: scale(0.85);
+}
+
+.slide-image {
+  /* Animation initial state */
+  opacity: 0;
+
+  /* Animation */
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.pet-info {
+  /* Grid placement */
+  grid-area: pet-info;
+
+  /* Box & layout */
+  width: 455px;
+  margin-bottom: 24px;
+  height: 816px; /* if fixed height is required */
+}
+
+.pet-info-title {
+  /* Box & layout */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 455px;
+  height: 128px;
+
+  /* Alignment */
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.pet-info-title h2 {
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000;
+  margin: 0;
+}
+
+.pet-price {
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  line-height: 0.75;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+.pet-desc {
+  /* Grid placement */
+  grid-area: pet-desc;
+
+  /* Box & layout */
+  width: 728px;
+  height: 192px;
+}
+
+.pet-desc h2 {
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000;
+  margin: 0 0 16px;
+}
+
+.pet-desc p {
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  line-height: 1.33333;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #3b3b3b;
+
+  /* Text flow */
+  text-align: justify;
+  text-justify: inter-word;
+
+  /* Box */
+  width: 728px;
+}
+
+.pet-attributes,
+.pet-contact {
+  /* Box & layout */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pet-contact {
+  /* Spacing */
+  margin: 20px 0 24px;
+}
+
+.pet-attributes h3,
+.pet-contact h3 {
+  /* Typography */
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #000;
+  margin: 0;
+}
+
+.take-button {
+  display: flex;
+  gap: 8px;
+  background: #5a00d6;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  border: none;
+  color: #fff;
+  font: 500 24px "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  width: 455px;
+  height: 48px;
+  cursor: pointer;
+}
+
+/* Optional: remove focus outline or replace with your own */
+.take-button:focus {
+  outline: none;
+}

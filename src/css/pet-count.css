@@ -1,0 +1,61 @@
+.pet-count-wrapper {
+  position: relative;         /* establish a stacking context */
+  width: 1044px;
+  height: 236px;
+  overflow: visible;          /* allow the shape to poke outside */
+}
+
+.pet-stats-container {
+  position: relative;
+  z-index: 1;
+  width: 1020px;
+  height: 212px;
+  padding: 48px 56px 48px 107px;
+  background: var(--stats-gradient);
+  border-radius: 0 20px 20px 0;
+  box-sizing: border-box;
+}
+
+.pet-stats {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 856px;
+  height: 116px;
+  gap: 64px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 120px;
+  height: 116px;
+  gap: 16px;
+}
+
+.count {
+  font: 400 56px/1.14286 "Roboto", sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.label {
+  font: 400 28px/1.28571 "Roboto", sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.back-color {
+  position: absolute;
+  top: -24px;
+  right: 0;
+  width: 224px;
+  height: 224px;
+  background: var(--stats-under-color);
+  border-radius: 40px;
+  z-index: 0;
+}

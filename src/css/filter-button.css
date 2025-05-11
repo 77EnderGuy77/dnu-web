@@ -1,0 +1,74 @@
+.filter-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 288px;
+  height: 88px;
+}
+
+.filter-button-start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  width: 288px;
+  height: 40px;
+  border-radius: 100px;
+  background: #5a00d6;
+}
+
+.filter-button-start:hover {
+  background: #5a00d6;
+}
+
+.filter-button-start:active {
+  background: #4600a6;
+}
+
+.filter-button-start:disabled {
+  background: #797979;
+}
+
+.filter-button-start span {
+  font: 500 14px/1.42857 "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #fff;
+}
+
+.filter-button-reset {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  width: 288px;
+  height: 40px;
+  border: 2px solid #5a00d6;
+  border-radius: 100px;
+  color: #5a00d6;
+  fill: #5a00d6;
+}
+
+.filter-button-reset svg path {
+  fill: currentColor;
+}
+
+.filter-button-reset:hover {
+  border-color: #6700f7;
+  color: #6700f7;
+  fill: #6700f7;
+}
+
+.filter-button-reset:active {
+  border-color: #4600a6;
+  color: #4600a6;
+  fill: #4600a6;
+}
+
+.filter-button-reset:disabled {
+  border-color: #797979;
+  color: #555;
+  fill: #555;
+}

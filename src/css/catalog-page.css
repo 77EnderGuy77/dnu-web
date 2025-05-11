@@ -1,0 +1,49 @@
+/* filter-page.css */
+
+.filter-page {
+  display: grid;
+
+  grid-template-areas:
+    "header     header"
+    "filter     right-pets"
+    "filter     pagination"
+    "footer     footer";
+  width: 100%;
+  max-width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/* map the named areas */
+
+.header {
+  grid-area: header;
+}
+.filter {
+  grid-area: filter;
+  padding: 32px 16px;
+  overflow-y: auto;
+}
+.right-pets {
+  grid-area: right-pets;
+  margin: 112px 108px 64px 24px;
+  width: 912px;
+  height: 1484px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px 14px;
+}
+.pagination {
+  grid-area: pagination;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 108px 64px 24px;
+  gap: 8px;
+}
+.footer {
+  grid-area: footer;
+}

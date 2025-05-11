@@ -1,0 +1,39 @@
+/* char.css */
+.char {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 455px;
+  height: 48px;
+  background: #f4f1ff;
+  gap: 12px;
+  border-radius: 24px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.char-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.char-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.char-title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+}
+
+.char-info {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  text-align: right;
+}

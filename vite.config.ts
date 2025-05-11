@@ -1,8 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/dnu-web/',
   plugins: [react()],
-  base: '/dnu-web'
+  server: {
+    open: '/dnu-web/'
+  }
 })

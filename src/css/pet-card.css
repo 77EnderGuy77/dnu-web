@@ -1,0 +1,89 @@
+.pet-card {
+  display: flex;
+  flex-direction: column;
+  width: 288px;
+  height: 484px;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e6e6e6;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.pet-card-img {
+  width: 100%;
+  height: 288px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pet-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.pet-card-info-box {
+  display: flex;
+  flex-direction: column;
+  height: 196px;
+  padding: 16px;
+}
+
+.pet-card-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1d1b20;
+  margin: 0;
+  padding-bottom: 16px;
+  min-height: 48px;
+}
+
+.pet-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-grow: 1;
+  margin-bottom: 8px;
+}
+
+.pet-card-info-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.pet-card-info-item img {
+  width: 24px;
+  height: 24px;
+}
+
+.pet-card-info-item span {
+  font: 400 14px 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  color: #49454f;
+  margin: 0;
+}
+
+.pet-card-price {
+  text-align: right;
+  margin-top: auto;
+}
+
+.pet-card-price span {
+  font-weight: 500;
+  font-size: 22px;
+  color: #14002f;
+}
+
+.pet-card,
+.pet-card:hover,
+.pet-card:focus {
+  text-decoration: none;
+  color: inherit;
+}

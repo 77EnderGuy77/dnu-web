@@ -1,0 +1,63 @@
+/* main-page.css */
+:root {
+  --stats-gradient: linear-gradient(270deg, #6943ff 0%, #6144d7 100%);
+  --stats-under-color: rgba(233, 227, 255, 0.7);
+  --icon-color: #7919ff;
+  --text-color: #14002f;
+  --text-color-light: #fff;
+}
+
+.main-page {
+  width: 1440px;
+  min-height: 100vh;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.main-page-top {
+  display: flex;
+  align-items: flex-start;
+}
+
+.main-page-title {
+  margin: 146px 0 0;
+  padding-left: 107px;
+  font: 700 68px/1.5 "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  color: #000;
+}
+
+.option-box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 0 0 292px;
+  padding-left: 107px;
+}
+.option-box-group {
+  display: flex;
+  gap: 16px; /* horizontal gap between the two option boxes */
+}
+
+.Girl {
+  margin-left: 40px;
+}
+
+.pet-cards-grid {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 1224px;
+  height: 484px;
+  margin: 0 0 96px 113px;
+  gap: 32px;
+}
+
+.latest-pets h2 {
+  margin: 80px 0 0;
+  font: 400 36px/1.2 "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #000;
+}

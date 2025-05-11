@@ -1,0 +1,36 @@
+:root {
+  --register-color-default: #5a00d6;
+  --register-color-hover: #6700f7;
+  --register-color-pressed: #4600a6;
+  --register-color-disabled: #797979;
+  --register-color-font: #ffffff;
+}
+
+.register-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.register-button {
+  width: 392px;
+  height: 56px;
+  border: none;
+  border-radius: 28px;
+  background-color: var(--register-color-default);
+  color: var(--register-color-font);
+}
+
+.register-button:hover {
+  background-color: var(--register-color-hover);
+}
+
+.register-button:active {
+  background-color: var(--register-color-pressed);
+}
+
+.register-button:disabled {
+  background-color: var(--register-color-disabled);
+}

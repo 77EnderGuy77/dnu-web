@@ -1,0 +1,31 @@
+.search-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 149px;
+  height: 56px;
+  padding: 0 12px;
+  border: none;
+  border-radius: 28px;
+  background-color: #5a00d6;
+  color: #fff;
+  font: 500 14px/1.43 "Roboto", sans-serif;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #4700a8;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.search-text {
+  white-space: nowrap;
+}

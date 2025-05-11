@@ -1,0 +1,110 @@
+/* footer.css */
+a,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 1440px;
+  height: 177px;
+  margin: auto 0 0;     /* push to bottom in column flex */
+  padding: 32px 0 16px;
+  gap: 49px;
+  background: #313131;
+  position: relative;
+  z-index: 999;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 1224px;
+  height: 56px;
+  gap: 544px;
+}
+
+.footer-top-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  width: 205px;
+  height: 56px;
+  gap: 12px;
+}
+
+.footer-top-left-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  gap: 8px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.footer-top-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 149px;
+  height: 56px;
+  gap: 8px;
+}
+
+.footer-top-right-text {
+  font: 700 16px/1.5 "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-top-right-email-container {
+  width: 149px;
+  height: 24px;
+}
+
+.footer-top-right-email {
+  font: 400 14px/1.71429 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  color: #9786e3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.footer-legal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 1224px;
+  height: 56px;
+}
+
+.footer-legal-text {
+  font: 400 12px/2 "Roboto", sans-serif;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #d9d9d9;
+}
+
+.footer-legal-separator {
+  color: #d9d9d9;
+  margin: 0 8px;
+}
+
+.footer-legal-link {
+  font: 400 12px/2 "Roboto", sans-serif;
+  color: #9786e3;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}

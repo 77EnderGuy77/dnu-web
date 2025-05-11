@@ -1,0 +1,15 @@
+/* Pull in the shared .select-wrapper and arrow styles */
+@import "./option-box.css";
+
+/* Place Min & Max side by side */
+.age-filter-container {
+  display: flex;
+  gap: 16px;
+}
+
+/* But make each box 136×64 instead of 288×64 */
+.age-filter-container .select-wrapper {
+  width: 136px;
+  height: 64px;
+  margin: 8px 0;
+}
