@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: space-between;
   width: 1440px;
-  margin: 0 auto;        
+  margin: 0 auto;
   padding: 24px 108px;
   background: #fff;
   border-bottom: 1px solid #c3c3c3;
@@ -15,23 +15,29 @@
   z-index: 9999;
 }
 
-/* Logo/link reset */
-.header-logo-text,
-.header-logo-text:hover,
-.header-logo-text:focus {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Logo graphic */
-.header-logo {
+/* Logo link */
+.header-logo-link,
+.header-logo-link:hover,
+.header-logo-link:focus {
   display: flex;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
+
+/* Catalog link */
+.header-catalog .header-text {
+  margin-left: 40px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.header-catalog .header-text:hover {
+  text-decoration: underline;
+}
+
+/* Logo graphic */
 .header-logo-img {
   width: 44px;
   height: 44px;
@@ -54,9 +60,10 @@
   display: flex;
   align-items: center;
   gap: 24px;
+  margin-left: auto;
 }
 
-/* “Add Post” button link wrapper to strip underline */
+/* Strip underline on all links in post area */
 .header-post-acc a {
   text-decoration: none;
 }
@@ -76,10 +83,7 @@
   font: 400 14px/1.3333 "Roboto", sans-serif;
   letter-spacing: 0.03em;
   cursor: pointer;
-  text-decoration: none;  /* no underline */
 }
-
-/* Prevent color change on focus/active */
 .header-post-btn:focus,
 .header-post-btn:active {
   outline: none;
