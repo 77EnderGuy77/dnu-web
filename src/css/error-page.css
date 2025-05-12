@@ -41,3 +41,7 @@
   width: 375px;
   height: 58px;
 }
+
+.home-button:hover {
+  cursor: pointer;
+}
