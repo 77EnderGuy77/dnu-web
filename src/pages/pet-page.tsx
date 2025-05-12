@@ -70,7 +70,7 @@ export const PetPage: React.FC = () => {
     { title: "Стать", info: pet.gender, img: genderIcon },
     { title: "Колір", info: pet.color, img: colorIcon },
     { title: "Вік", info: formatAge(pet.ageInDays), img: calendarIcon },
-    { title: "Захворювання", info: pet.health, img: healthIcon },
+    { title: "Вакцинации", info: pet.health, img: healthIcon },
   ];
 
   const contacts = [
