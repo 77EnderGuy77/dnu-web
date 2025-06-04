@@ -1,4 +1,5 @@
 import json
+import os
 import re
 
 def parse_age_to_days(age_str: str) -> int:
@@ -40,7 +41,7 @@ def transform_ages(input_path: str, output_path: str):
         json.dump(pets, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    INPUT_FILE = r"src\pets.json"  # path to your original JSON file
-    OUTPUT_FILE = "pets_with_ageInDays.json"
+    INPUT_FILE = os.path.join("src", "pets.json")
+    OUTPUT_FILE = os.path.join("pets_with_ageInDays.json")
     transform_ages(INPUT_FILE, OUTPUT_FILE)
     print(f"Transformed JSON saved to {OUTPUT_FILE}")
